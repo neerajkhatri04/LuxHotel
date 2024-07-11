@@ -6,7 +6,6 @@ export const metadata = {
 
 export default async function Page() {
   const session = await auth();
-  console.log(session);
   return (
     <div>
       <h1>Hello, {session.user.name}</h1>
